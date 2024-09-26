@@ -1,0 +1,508 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Videojuegos del Año</title>
+    <style>
+        /* Importar fuente estilo "pixel art" */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            background: url('https://wallpapercave.com/wp/wp2466919.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #00ff00;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 3px solid #00ff00;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        main {
+            width: 90%;
+            margin: 30px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .section-title {
+            background-color: #00ff00;
+            color: black;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .game-list {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .game {
+            padding: 10px;
+            margin: 20px 0;
+            /* Mayor separación entre líneas */
+            border-bottom: 2px solid #00ff00;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game:hover {
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        /* Información oculta inicialmente */
+        .game-info {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            /* Mayor separación entre la información y el título */
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            color: #00ff00;
+        }
+
+        /* Estilos para el video */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            padding-bottom: 56.25%;
+            /* Mantener la proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #00ff00;
+            margin-top: 40px;
+            border-top: 3px solid #00ff00;
+        }
+
+        /* Estilos adicionales para mejorar la estética */
+        .glow {
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+        }
+
+        /* Transiciones para los desplegables */
+        .game-info {
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .game-info.show {
+            display: block;
+            max-height: 300px;
+            opacity: 1;
+        }
+
+        /* Estilo para la sección de Mejor Juego del Año */
+        .best-game-section {
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            animation: glowAnimation 2s infinite;
+        }
+
+        @keyframes glowAnimation {
+            0% {
+                box-shadow: 0 0 20px #ff0000;
+            }
+
+            50% {
+                box-shadow: 0 0 50px #ff0000;
+            }
+
+            100% {
+                box-shadow: 0 0 20px #ff0000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="glow">Los Mejores Videojuegos del Año</h1>
+    </header>
+
+    <main>
+        <!-- Mejores Gráficos -->
+        <section>
+            <h2 class="section-title">Mejores Gráficos</h2>
+            <div class="game-list">
+                <div class="game">
+                    1. Tekken 8
+                    <div class="game-info">
+                        <p>Este juego de lucha utiliza el motor Unreal Engine 5, ofreciendo gráficos de nueva generación
+                            con una calidad
+                            impresionante en los detalles de los personajes y efectos visuales inmersivos.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/sfZNBbCtC2M?si=jIp7dA7N7pM6Qk_j"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    2. Stellar Blade
+                    <div class="game-info">
+                        <p>Un hack and slash exclusivo de PlayStation 5 que destaca por sus visuales hiperrealistas y
+                            detalladas escenas
+                            cinemáticas, dando vida a un mundo futurista en decadencia.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/SP0-P6uyQV0?si=k_LRzVo8m4yoR6Pg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    3. Star Wars: Outlaws
+                    <div class="game-info">
+                        <p>El primer juego de mundo abierto en el universo de Star Wars ofrece una experiencia gráfica
+                            espectacular, con planetas
+                            llenos de vida y efectos visuales que capturan la inmensidad de la galaxia.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/R_O1eqWWbe4?si=goeAFRlhzq2rR5WQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mejor Historia -->
+        <section>
+            <h2 class="section-title">Mejor Historia</h2>
+            <div class="game-list">
+                <div class="game">
+                    1. Star Wars: Outlaws
+                    <div class="game-info">
+                        <p>La narrativa entre las películas clásicas de Star Wars destaca por su trama inmersiva, donde
+                            la protagonista lucha por
+                            su libertad en un entorno lleno de peligros y aventuras.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/R_O1eqWWbe4?si=goeAFRlhzq2rR5WQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    2. Persona 3 Reload
+                    <div class="game-info">
+                        <p>Un remake que moderniza uno de los RPG más queridos por su trama emocional, en la que los
+                            personajes luchan no solo por
+                            su vida, sino también por dejar una huella en la memoria de sus amigos.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/P2ZnzxrlYAQ?si=_DEg3gdaV_m59MY7"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    3. Hades II
+                    <div class="game-info">
+                        <p>La secuela de Hades sigue explorando la mitología griega, pero esta vez centrada en Melionë,
+                            lo que añade una nueva capa
+                            de profundidad narrativa.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/UCJf4irM03I?si=Wu_mZQYErpA3L4mN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mejor Jugabilidad -->
+        <section>
+            <h2 class="section-title">Mejor Jugabilidad</h2>
+            <div class="game-list">
+                <div class="game">
+                    1. Hades II
+                    <div class="game-info">
+                        <p>Con su enfoque en el combate roguelike, mejora sobre la jugabilidad del original Hades,
+                            añadiendo nuevas mecánicas que
+                            lo hacen más profundo y desafiante.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/UCJf4irM03I?si=Wu_mZQYErpA3L4mN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    2. Tekken 8
+                    <div class="game-info">
+                        <p>Las mejoras en la jugabilidad con nuevas dinámicas de lucha y la precisión de los controles
+                            lo colocan entre los mejores
+                            en términos de jugabilidad.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/sfZNBbCtC2M?si=jIp7dA7N7pM6Qk_j"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    3. Baby Steps
+                    <div class="game-info">
+                        <p>Este juego indie revolucionario en el género de simuladores de caminar se destaca por su
+                            enfoque cómico y desafiante,
+                            brindando una experiencia de jugabilidad única.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/XBaOE-FpIBw?si=hblnNFHTr9-OBztU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mejor diseño de sonido -->
+        <section>
+            <h2 class="section-title">Mejor Diseño de sonido</h2>
+            <div class="game-list">
+                <div class="game">
+                    1. Stellar Blade
+                    <div class="game-info">
+                        <p>Este juego de acción futurista no solo brilla por sus gráficos, sino también por su
+                            envolvente diseño de sonido. El uso
+                            detallado de efectos sonoros durante el combate y la ambientación en un mundo
+                            post-apocalíptico elevan la experiencia
+                            auditiva, dándole una atmósfera intensa y envolvente.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/SP0-P6uyQV0?si=k_LRzVo8m4yoR6Pg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    2. Hades II
+                    <div class="game-info">
+                        <p>La secuela del popular Hades se lanzó en 2024 y, al igual que su predecesor, sobresale por su
+                            diseño de sonido. La banda
+                            sonora épica y los efectos auditivos del combate crean una atmósfera vibrante que
+                            complementa el estilo artístico único
+                            del juego.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/UCJf4irM03I?si=Wu_mZQYErpA3L4mN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    3. World of Warcraft: The War Within
+                    <div class="game-info">
+                        <p>La nueva expansión de WoW destaca por sus mejoras técnicas, incluyendo el diseño de sonido.
+                            Los nuevos entornos
+                            subterráneos están llenos de efectos que aportan inmersión y una sensación palpable de estar
+                            explorando profundidades
+                            peligrosas.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/UGvkGIXhyVc?si=ON_Gem5pibL1zX83"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mejor multijugador -->
+        <section>
+            <h2 class="section-title">Mejor Multijugador</h2>
+            <div class="game-list">
+                <div class="game">
+                    1. Tekken 8
+                    <div class="game-info">
+                        <p>Este juego de lucha se lanzó en 2024 y ha capturado la atención del público por su
+                            multijugador, que ofrece combates
+                            dinámicos y pulidos, con mejoras en el sistema de lucha y una excelente estabilidad online.
+                        </p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/sfZNBbCtC2M?si=jIp7dA7N7pM6Qk_j"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    2. World of Warcraft: The War Within
+                    <div class="game-info">
+                        <p>Esta expansión de World of Warcraft, lanzada en 2024, introduce nuevas áreas y sistemas
+                            multijugador, manteniendo a los
+                            jugadores comprometidos con su vasto mundo y nuevas misiones cooperativas.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/UGvkGIXhyVc?si=ON_Gem5pibL1zX83"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    3. Diablo IV: Lord of Destruction
+                    <div class="game-info">
+                        <p>La expansión lanzada en 2024 añade contenido multijugador masivo a Diablo IV, permitiendo
+                            incursiones cooperativas y
+                            enfrentamientos PvP con nuevas mecánicas, lo que lo convierte en uno de los favoritos del
+                            año.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="200"
+                                src="https://www.youtube.com/embed/ARLdeuUjFy0?si=ZOLUXzqQhT1RTEgN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mejor Juego del Año -->
+        <section>
+            <h2 class="best-game-section">Mejor Juego del Año</h2>
+            <div class="game-list">
+                <div class="game">
+                    Starfield
+                    <div class="game-info">
+                        <p>Starfield es un RPG de acción desarrollado por Bethesda Game Studios, lanzado en septiembre
+                            de 2024. Es el primer
+                            universo nuevo creado por el estudio en 25 años, ambientado en un futuro donde la humanidad
+                            ha colonizado el espacio.
+                            Los jugadores asumen el papel de un explorador que puede viajar a cientos de planetas,
+                            personalizar naves, participar en
+                            combates espaciales y seguir una narrativa profunda. Su enfoque en la exploración y la
+                            libertad de decisión ha sido
+                            elogiado, convirtiéndolo en un título destacado de 2024.</p>
+
+                        <div class="video-container">
+                            <iframe width="365" height="150"
+                                src="https://www.youtube.com/embed/-zhky8OUALQ?si=AXtgBRZZ_OtKbIzI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Página creada por el 'Team Maska'</p>
+    </footer>
+
+    <script>
+        const games = document.querySelectorAll('.game');
+        games.forEach(game => {
+            game.addEventListener('click', () => {
+                const gameInfo = game.querySelector('.game-info');
+                gameInfo.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
